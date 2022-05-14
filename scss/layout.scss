@@ -1,0 +1,84 @@
+@import "_mixin.scss", "_variable.scss";
+@import url(../css/reset.css);
+@import url(../css/nomalize.css);
+@import url(../css/font.css);
+@import url(../css/common.css);
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #dfe3e8;
+  background-color: #282828;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrap {
+  padding: 0 20px;
+  height: 100%;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+.inner {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.8;
+  display: block;
+}
+
+header {
+  height: 60px;
+  position: fixed;
+  position: relative;
+  z-index: 10;
+
+  h1 {
+    position: absolute;
+    font-family: "Anton", sans-serif;
+    font-size: var(--font-size__h1);
+    color: #fff;
+    line-height: 60px;
+  }
+  nav {
+    line-height: 60px;
+    position: absolute;
+    right: 20px;
+
+    a {
+      font-size: 18px;
+      display: inline-block;
+    }
+  }
+}
+
+footer {
+  margin-top: 7vh;
+  padding-bottom: 5vh;
+
+  .wrap {
+    position: relative;
+  }
+
+  .copyright_wrap {
+    position: absolute;
+    left: calc(22vw + 20px);
+    @include tablet {
+      position: static;
+    }
+  }
+
+  .country {
+    position: absolute;
+    right: 20px;
+  }
+}

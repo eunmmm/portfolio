@@ -1,0 +1,51 @@
+@mixin animation($delay, $duration, $name, $iteration, $timing) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $name;
+  animation-iteration-count: $iteration;
+  animation-timing-function: $timing;
+}
+
+@mixin keyframe($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}
+
+@include keyframe(text-loop) {
+  from {
+    transform: translateX(-20%) translateZ(0);
+  }
+  to {
+    transform: translateX(-120%) translateZ(0);
+  }
+}
+@include keyframe(text-loop-reverse) {
+  from {
+    transform: translateX(20%) translateZ(0);
+  }
+  to {
+    transform: translateX(120%) translateZ(0);
+  }
+}
+
+/*반응형 화면 크기*/
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1330px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}

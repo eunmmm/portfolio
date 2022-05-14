@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@font-face {
+  font-family: "Neue Montreal";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url("../fonts/PPNeueMontreal-Regular.woff") format("woff"),
+    url("../fonts/PPNeueMontreal-Regular.eot") format("opentype");
+}
+@font-face {
+  font-family: "Neue Montreal";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 500;
+  src: url("../fonts/PPNeueMontreal-Medium.woff") format("woff"),
+    url("../fonts/PPNeueMontreal-Medium.eot") format("opentype");
+}
+@font-face {
+  font-family: "Neue Montreal";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url("../fonts/PPNeueMontreal-Bold.woff") format("woff"),
+    url("../fonts/PPNeueMontreal-Bold.eot") format("opentype");
+}

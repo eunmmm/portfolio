@@ -1,0 +1,19 @@
+@import "_mixin.scss";
+
+:root {
+  --font-size__h1: 28px;
+  --font-size__h2: 24px;
+  --font-size__h3: 3.2vw;
+  --line-height__h3: 1.1;
+  --font-size__h4: 18px;
+  --font-size__big_typo: 13vw;
+  --font-size__sub_typo: 0.9vw;
+  --line-height__sub_typo: 0.95;
+}
+
+@media (max-width: $tablet) {
+  :root {
+    --font-size__sub_typo: 1rem;
+    --font-size__h3: 4vw;
+  }
+}

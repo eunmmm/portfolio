@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+@import url(../css/nomalize.css);
+@import url(../css/font.css);
+@import url(../css/common.css);
+@-webkit-keyframes text-loop {
+  from {
+    -webkit-transform: translateX(-20%) translateZ(0);
+            transform: translateX(-20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-120%) translateZ(0);
+            transform: translateX(-120%) translateZ(0);
+  }
+}
+@keyframes text-loop {
+  from {
+    -webkit-transform: translateX(-20%) translateZ(0);
+            transform: translateX(-20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-120%) translateZ(0);
+            transform: translateX(-120%) translateZ(0);
+  }
+}
+
+@-webkit-keyframes text-loop-reverse {
+  from {
+    -webkit-transform: translateX(20%) translateZ(0);
+            transform: translateX(20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(120%) translateZ(0);
+            transform: translateX(120%) translateZ(0);
+  }
+}
+
+@keyframes text-loop-reverse {
+  from {
+    -webkit-transform: translateX(20%) translateZ(0);
+            transform: translateX(20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(120%) translateZ(0);
+            transform: translateX(120%) translateZ(0);
+  }
+}
+
+/*반응형 화면 크기*/
+@keyframes text-loop {
+  from {
+    -webkit-transform: translateX(-20%) translateZ(0);
+            transform: translateX(-20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-120%) translateZ(0);
+            transform: translateX(-120%) translateZ(0);
+  }
+}
+
+@keyframes text-loop-reverse {
+  from {
+    -webkit-transform: translateX(20%) translateZ(0);
+            transform: translateX(20%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(120%) translateZ(0);
+            transform: translateX(120%) translateZ(0);
+  }
+}
+
+/*반응형 화면 크기*/
+:root {
+  --font-size__h1: 28px;
+  --font-size__h2: 24px;
+  --font-size__h3: 3.2vw;
+  --line-height__h3: 1.1;
+  --font-size__h4: 18px;
+  --font-size__big_typo: 13vw;
+  --font-size__sub_typo: 0.9vw;
+  --line-height__sub_typo: 0.95;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --font-size__sub_typo: 1rem;
+    --font-size__h3: 4vw;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #dfe3e8;
+  background-color: #282828;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrap {
+  padding: 0 20px;
+  height: 100%;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+.inner {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.8;
+  display: block;
+}
+
+header {
+  height: 60px;
+  position: fixed;
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  position: absolute;
+  font-family: "Anton", sans-serif;
+  font-size: var(--font-size__h1);
+  color: #fff;
+  line-height: 60px;
+}
+
+header nav {
+  line-height: 60px;
+  position: absolute;
+  right: 20px;
+}
+
+header nav a {
+  font-size: 18px;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 7vh;
+  padding-bottom: 5vh;
+}
+
+footer .wrap {
+  position: relative;
+}
+
+footer .copyright_wrap {
+  position: absolute;
+  left: calc(22vw + 20px);
+}
+
+@media (max-width: 1024px) {
+  footer .copyright_wrap {
+    position: static;
+  }
+}
+
+footer .country {
+  position: absolute;
+  right: 20px;
+}
+/*# sourceMappingURL=layout.css.map */
