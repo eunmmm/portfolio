@@ -401,7 +401,10 @@
 
       @include tablet {
         flex-direction: column;
-
+        a {
+          position: static;
+          height: inherit;
+        }
         h4 {
           margin-top: 10px;
           position: static;

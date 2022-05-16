@@ -552,6 +552,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .sc_contact .contents_wrap .content a {
+    position: static;
+    height: inherit;
+  }
   .sc_contact .contents_wrap .content h4 {
     margin-top: 10px;
     position: static;
