@@ -305,6 +305,11 @@
   }
 }
 
+.sc_product .contents_wrap .content a {
+  height: 100%;
+  display: block;
+}
+
 .sc_product .contents_wrap .content .img_wrap {
   width: 100%;
   height: 100%;
@@ -404,6 +409,17 @@
   }
 }
 
+@media (max-width: 450px) {
+  .sc_product .contents_wrap .content .content_inner .cate {
+    max-width: 100px;
+    margin-left: 10px;
+  }
+  .sc_product .contents_wrap .content .content_inner .cate .inner {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .sc_product .contents_wrap .content .content_inner .title {
   position: absolute;
   z-index: 1;
@@ -423,6 +439,7 @@
   letter-spacing: -0.06em;
   -webkit-transform: translateX(-20%) translateZ(0);
           transform: translateX(-20%) translateZ(0);
+  color: #fff;
   -webkit-animation-delay: 0;
           animation-delay: 0;
   -webkit-animation-duration: 15s;
@@ -433,10 +450,6 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-
-.sc_product .contents_wrap .content .content_inner .title h3 a {
-  color: #fff;
 }
 
 .sc_contact {
@@ -499,20 +512,19 @@
 
 .sc_contact .contents_wrap .content {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.12);
-  padding-top: 16px;
-  padding-right: 22px;
-  padding-bottom: 16px;
-  padding-left: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.15, 1);
   transition: all 0.4s cubic-bezier(0.2, 0, 0.15, 1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
   font-size: var(--font-size__h4);
+  padding: 16px 0 16px 0;
+}
+
+.sc_contact .contents_wrap .content a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: var(--font-size__h4);
 }
 
 .sc_contact .contents_wrap .content:hover {
@@ -523,11 +535,13 @@
 
 .sc_contact .contents_wrap .content h4 {
   position: absolute;
+  top: 0;
   left: 22vw;
 }
 
 .sc_contact .contents_wrap .content .name {
   position: absolute;
+  top: 0;
   right: 0;
 }
 
@@ -560,6 +574,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
   }
   .sc_contact .contents_wrap .content .num {
     display: none;
@@ -568,7 +584,7 @@
     margin-top: 0;
   }
   .sc_contact .contents_wrap .content .name {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

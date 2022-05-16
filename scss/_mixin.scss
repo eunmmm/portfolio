@@ -30,10 +30,16 @@
 }
 
 /*반응형 화면 크기*/
+$Mmobile: 450px;
 $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1330px;
 
+@mixin Mmobile {
+  @media (max-width: $Mmobile) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (max-width: $mobile) {
     @content;
